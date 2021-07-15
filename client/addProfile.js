@@ -5,13 +5,19 @@ Template.addProfile.events({
         let profFirst = $('#firstName').val();
         let profLast = $('#lastName').val();
         let profAge = $('#age').val();
+        let profGen = $('input[name="GenderRadio"]:checked').val();
         if (isAddFormValid(profPic, profFirst, profLast, profAge)){
             // Save data into collection
             profilesdb.insert({
                 "pPic":profPic,
                 "pFirst":profFirst,
                 "pLast":profLast,
-                "pAge":profAge
+                "pAge":profAge,
+                "pGen":profGen,
+                "pOwn":Meteor.userId(),
+                "pName":Meteor.user().username,
+                 "createdOn": new Date().getTime()
+
             });
             // clear input boxes
             document.getElementById("preImg").src = "blank-profile_640.png";
