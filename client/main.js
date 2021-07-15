@@ -22,7 +22,7 @@ import './signIn.js';
 import '../lib/collection.js';
 import './myAccounts.js';
 import './addProfile.js';
-import './infinitescroll.js';
+import './infinite.js';
 import './filter.js';
 import '../lib/userAcct.js';
 import '../lib/router.js';
