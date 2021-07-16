@@ -1,6 +1,7 @@
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: rgba(196, 65, 174, 0.137) !important;
 }
 
 .p-frame{
